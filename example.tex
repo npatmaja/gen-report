@@ -1,0 +1,32 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{gen-rep}
+
+\usepackage{lipsum}
+
+\university{University of Doe}
+\course{Course Name}
+
+\author{John Doe \and Jane Doe \and Mira Doe}
+%\email{joh.doe@johndoe.com}
+\title{A Small Report on The Theory of John Doe}
+
+\begin{document}
+\maketitle
+% always use this to set header and footer on the first page
+\thispagestyle{fancy}
+
+\lipsum{1}
+\fig{fig:equation} shows fancy equation of Doe.
+\begin{figure}[h]
+\begin{align*}
+	 f(h,m,k) & =  g(h) + i(m + k) \\
+	 & =  l(h) - 1 + i(m) + i(k)\\\\
+	 f(m,k) & =  i(m + k) \\
+	 & =  i(m) + i(k)
+\end{align*}
+\caption{Doe's equation}
+\label{fig:equation}
+\end{figure}
+\end{document}
+
